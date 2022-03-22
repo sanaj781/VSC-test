@@ -30,7 +30,7 @@ code {
   font-size: 0.8em;
 }
 .post-wrapper {
-  padding: 3em;
+  padding: 0 1em;
   overflow-y: hidden;
 }
 .post-title {
