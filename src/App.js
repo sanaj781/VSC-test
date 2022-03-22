@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container-fluid"></div>
-      <div className="d-flex flex-column justify-content-between wrapper">
+      <div className="d-flex flex-column wrapper ">
         <header className="App-header">
           <Nav />
         </header>

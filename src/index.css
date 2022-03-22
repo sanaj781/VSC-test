@@ -69,7 +69,7 @@ code {
 .modal-content {
   padding: 30px 50px;
   align-items: center;
-  width: 50% !important;
+  width: 60% !important;
   color: black;
   justify-content: space-between;
   border-bottom-right-radius: 50px !important;
@@ -85,5 +85,8 @@ code {
 @media only screen and (max-width: 992px) {
   #toggle-button {
     display: block;
+  }
+  .modal-content {
+    width: 90% !important;
   }
 }

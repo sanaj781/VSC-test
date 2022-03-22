@@ -24,7 +24,7 @@ const NewPost = () => {
         .catch((error) => setError(error.message));
     } else {
       setModalClass("modal d-flex");
-      setModalMessage("Wpisz poprawny tytul lub tresc wiadomosci!");
+      setModalMessage("Wpisz poprawny tytul i/lub tresc wiadomosci!");
     }
   };
   const handleModalChange = () => {
@@ -49,7 +49,7 @@ const NewPost = () => {
         </div>
       </div>
       <form>
-        <h3 className="text-center my-5">Dodaj nowy wpis</h3>
+        <h3 className="text-center mb-5">Dodaj nowy wpis</h3>
         <div className="mb-3">
           <div className="form-floating">
             <textarea
@@ -70,7 +70,7 @@ const NewPost = () => {
               className="form-control new-post "
               id="title"
             ></textarea>
-            <label htmlFor="title">Tresc wiadomosci</label>
+            <label htmlFor="title">Tresc wpisu</label>
           </div>
         </div>
 

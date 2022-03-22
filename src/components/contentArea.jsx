@@ -5,7 +5,7 @@ import AllNews from "./allNews";
 import NewPost from "./newPost";
 const ContentArea = () => {
   return (
-    <div className="container-xxl">
+    <div className="container-xxl ">
       <Routes>
         <Route exact path="/" element={<AllNews />} />
         <Route path="/post/:id" element={<Post />} />
