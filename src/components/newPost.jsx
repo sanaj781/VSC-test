@@ -18,7 +18,6 @@ const NewPost = () => {
         data: postObject,
       })
         .then((result) => {
-          console.log(result.data);
           setModalClass("modal d-flex");
           setModalMessage("Dodano nowy wpis!");
         })
@@ -29,6 +28,8 @@ const NewPost = () => {
     }
   };
   const handleModalChange = () => {
+    setBody("");
+    setTitle("");
     setModalClass("modal");
   };
   if (error) console.log(error);
@@ -53,6 +54,7 @@ const NewPost = () => {
           <div className="form-floating">
             <textarea
               onChange={(e) => setTitle(e.target.value)}
+              value={title}
               className="form-control "
               id="title"
             ></textarea>
@@ -63,6 +65,7 @@ const NewPost = () => {
         <div className="mb-3">
           <div className="form-floating">
             <textarea
+              value={body}
               onChange={(e) => setBody(e.target.value)}
               className="form-control new-post "
               id="title"
