@@ -32,8 +32,6 @@ code {
 .post-wrapper {
   padding: 3em;
   overflow-y: hidden;
-  border: 1px solid black;
-  border-radius: 50px;
 }
 .post-title {
   font-size: 1.2em;
